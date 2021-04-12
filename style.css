@@ -1,0 +1,533 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+body{
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+  
+}
+.navbar{
+    background-color: #ffffff;
+    box-shadow: 0 0 3px 0 #6C6C6C;
+}
+.navbar-nav > li{
+    padding-left:30px;
+    padding-right:30px;
+  }
+.nav-item{
+   text-align: center;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 900;
+   transition: ease-in-out 0.5s;
+}
+.nav-item:hover{
+    background-color:rgba(251, 190, 43, 0.5) ;
+    border-radius: 20px;
+    
+}
+.nav-item:hover .nav-link{
+    color: black;
+}
+.header_content{
+    margin-top:100px;
+  
+}
+.btn-color{
+    background-color: #fbbe2b;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+}
+/* .main-content{
+	background-image: url("img/background2.png");
+	
+} */
+section{
+	margin-bottom: 150px;
+}
+hr{
+	margin-bottom: 70px;
+}
+.btn-color:hover{
+    background-color: #ffffff;
+    color: #fbbe2b;
+    border: 2px solid #fbbe2b;
+}
+.about_us{
+    margin-top: 100px;
+	
+}
+.about_p{
+    margin-top: 50px;
+	font-size: 2rem;
+}
+
+
+
+
+/* --------------FUTURES --------------*/
+@import url('https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap');
+ :root {
+	 --d: 700ms;
+	 --e: cubic-bezier(0.19, 1, 0.22, 1);
+	 --font-sans: 'Rubik', sans-serif;
+	 --font-serif: 'Robot', serif;
+}
+.fetures{
+	background-color: #eeeeee;
+}
+ .page-content {
+	 display: grid;
+	 grid-gap: 1rem;
+	 padding: 1rem;
+	 max-width: 1024px;
+	 margin: 0 auto;
+	
+}
+ @media (min-width: 600px) {
+	 .page-content {
+		 grid-template-columns: repeat(2, 1fr);
+	}
+}
+ @media (min-width: 800px) {
+	 .page-content {
+		 grid-template-columns: repeat(4, 1fr);
+	}
+}
+.page-content .card {
+	 position: relative;
+	 display: flex;
+	 align-items: center;
+	 overflow: hidden;
+	 padding: 1rem;
+	 width: 100%;
+	 text-align: center;
+	 color: whitesmoke;
+	 background-color: whitesmoke;
+	 box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+}
+ @media (min-width: 600px) {
+	.page-content .card {
+		 height: 350px;
+	}
+}
+.page-content .card:before {
+	 content: '';
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 width: 100%;
+	 height: 110%;
+	 background-size: cover;
+	 background-position: 0 0;
+	 transition: transform calc(var(--d) * 1.5) var(--e);
+	 pointer-events: none;
+}
+.page-content .card:after {
+	 content: '';
+	 display: block;
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 width: 100%;
+	 height: 200%;
+	 pointer-events: none;
+	 background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.009) 11.7%, rgba(0, 0, 0, 0.034) 22.1%, rgba(0, 0, 0, 0.072) 31.2%, rgba(0, 0, 0, 0.123) 39.4%, rgba(0, 0, 0, 0.182) 46.6%, rgba(0, 0, 0, 0.249) 53.1%, rgba(0, 0, 0, 0.320) 58.9%, rgba(0, 0, 0, 0.394) 64.3%, rgba(0, 0, 0, 0.468) 69.3%, rgba(0, 0, 0, 0.540) 74.1%, rgba(0, 0, 0, 0.607) 78.8%, rgba(0, 0, 0, 0.668) 83.6%, rgba(0, 0, 0, 0.721) 88.7%, rgba(0, 0, 0, 0.762) 94.1%, rgba(0, 0, 0, 0.790) 100%);
+	 transform: translateY(-50%);
+	 transition: transform calc(var(--d) * 2) var(--e);
+}
+.page-content .card:nth-child(1):before {
+	 background-image: url(https://github.com/tradailywebfiles/tradailyfiles/raw/main/growing.jpg);
+}
+.page-content .card:nth-child(2):before {
+	 background-image: url(https://github.com/tradailywebfiles/tradailyfiles/raw/main/knowlidge.jpg);
+}
+.page-content .card:nth-child(3):before {
+	 background-image: url(https://github.com/tradailywebfiles/tradailyfiles/raw/main/study.jpg);
+}
+.page-content .card:nth-child(4):before {
+    background-image: url(https://github.com/tradailywebfiles/tradailyfiles/raw/main/buy.jpg);
+}
+
+ .content {
+	 position: relative;
+	 display: flex;
+	 flex-direction: column;
+	 align-items: center;
+	 width: 100%;
+	 padding: 1rem;
+	 transition: transform var(--d) var(--e);
+	 z-index: 1;
+}
+ .content > * + * {
+	 margin-top: 1rem;
+}
+ .title {
+    
+    
+	 font-size: 1.3rem;
+	 font-weight: bold;
+	 line-height: 1.2;
+}
+ .copy {
+	 font-family: var(--font-serif);
+	 font-size: 1.125rem;
+	 font-style: italic;
+	 line-height: 1.35;
+}
+
+ @media (hover:hover) and (min-width: 600px) {
+	.page-content .card:after {
+		 transform: translateY(0);
+	}
+	 .content {
+		 transform: translateY(calc(100% - 4.5rem));
+	}
+	 .content > *:not(.title) {
+		 opacity: 0;
+		 transform: translateY(1rem);
+		 transition: transform var(--d) var(--e), opacity var(--d) var(--e);
+	}
+	.page-content .card:hover, .card:focus-within {
+		 align-items: center;
+	}
+	.page-content .card:hover:before, .card:focus-within:before {
+		 transform: translateY(-4%);
+	}
+	.page-content .card:hover:after, .card:focus-within:after {
+		 transform: translateY(-50%);
+	}
+    .page-content .card:hover .content, .card:focus-within .content {
+		 transform: translateY(0);
+	}
+	.page-content .card:hover .content > *:not(.title), .card:focus-within .content > *:not(.title) {
+		 opacity: 1;
+		 transform: translateY(0);
+		 transition-delay: calc(var(--d) / 8);
+	}
+	.page-content .card:focus-within:before, .card:focus-within:after, .card:focus-within .content, .card:focus-within .content > *:not(.title) {
+		 transition-duration: 0s;
+	}
+}
+/* --steps---- */
+.steps{
+	background-image: url("https://github.com/tradailywebfiles/tradailyfiles/raw/main/triangle.png");
+	background-repeat: no-repeat;
+	background-size:35%;
+}
+.fa-flex-cards-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+
+}
+.fa-flex-cards {
+	max-width: 393px;
+	height: auto;
+	position: relative;
+}
+.fa-flex-cards:nth-child(2) {
+	background-color: #ff5252;
+	color: #fff;
+}
+
+/* ======= Contact Us ======== */
+
+.container1{
+	max-width:1170px;
+	margin-left:auto;
+	margin-right:auto;
+	padding:1em;
+	
+  }
+  
+  .container1 ul{
+	list-style: none;
+	padding:0;
+  }
+  
+  
+  .container1 .brand span{
+	color:#fff;
+  }
+  
+  .wrapper{
+	box-shadow: 0 0 20px 0 rgba(72,94,116,0.3);
+	border: 4px solid #fbbe2b;
+	
+  }
+  
+  .wrapper > *{
+	padding: 1em;
+  }
+  
+  .company-info{
+	background:#6C6C6C;
+  }
+ 
+  
+  .company-info h3, .company-info ul{
+	text-align: center;
+	margin:0 0 1rem 0;
+	color: white;
+  }
+  .company-info ul li{
+	padding-top: 10px;
+	font-size: 20px;
+  }
+  .container1 .contact{
+	background:#a8a8a8;
+	
+  }
+  
+  /* FORM STYLES */
+  .container1 .contact form{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap:20px;
+  }
+  
+  .container1 .contact form label{
+	display:block;
+	color: white;
+	font-family: "Robot" , sans-serif;
+  }
+  .contact h3{
+	font-family: "Robot" , sans-serif;
+	color: white;
+  }
+  .container1 .contact form p{
+	margin:0;
+  }
+  
+  .container1 .contact form .full{
+	grid-column: 1 / 3;
+  }
+  
+  .container1 .contact form button, .contact form input, .contact form textarea{
+	width:100%;
+	padding:1em;
+	border:1px solid #fbbe2b;
+  }
+  
+  .container1 .contact form button{
+	background:#fbbe2b;
+	border:0;
+	text-transform: uppercase;
+  }
+  
+  .container1 .contact form button:hover,.contact form button:focus{
+	background:#ff5252;
+	color:#fff;
+	outline:0;
+	transition: background-color 2s ease-out;
+  }
+  
+  /* LARGE SCREENS */
+  @media(min-width:700px){
+	.wrapper{
+	  display: grid;
+	  grid-template-columns: 1fr 2fr;
+	}
+  
+	.wrapper > *{
+	  padding:2em;
+	}
+  
+	.container1 .company-info h3, .company-info ul, .brand{
+	  text-align: left;
+	}
+  }
+
+  /* FOOTER */
+  .site-footer
+  {
+	margin: 50px 0 -150px 0; /* or just use:  margin-top: 50px;*/
+  
+	background-color:#6C6C6C;
+	padding:45px 0 20px;
+	font-size:15px;
+	line-height:24px;
+	color:#ffffff;
+  }
+  .site-footer hr
+  {
+	border-top-color:rgb(255, 255, 255);
+	opacity:0.5
+  }
+  .site-footer hr.small
+  {
+	margin:20px 0
+  }
+  .site-footer h6
+  {
+	color:rgb(255, 255, 255);
+	font-size:16px;
+	text-transform:uppercase;
+	margin-top:5px;
+	letter-spacing:2px;
+	font-weight: 600;
+  }
+  .site-footer p{
+	  margin-top: 20px;
+  }
+  .site-footer a
+  {
+	font-family: "Robot" , sans-serif;
+	color:#ffffff;
+  }
+  .site-footer a:hover
+  {
+	color:#ff5252;
+	text-decoration:none;
+  }
+  .footer-links
+  {
+	padding-left:0;
+	list-style:none
+  }
+  .footer-links li
+  {
+	display:block
+	
+  }
+  .footer-links a
+  {
+	font-family: "Robot", sans-serif;
+	font-weight: 600;
+	color:#ffffff;
+  }
+  .footer-links a:active,.footer-links a:focus,.footer-links a:hover
+  {
+	color:#fbbe2b;
+
+	text-decoration:none;
+  }
+  .footer-links.inline li
+  {
+	display:inline-block;
+  }
+  .site-footer .social-icons
+  {
+	text-align:right;
+  }
+  .site-footer .social-icons a
+  {
+	width:40px;
+	height:40px;
+	line-height:40px;
+	margin-left:6px;
+	margin-right:0;
+	border-radius:100%;
+	background-color:#33353d
+  }
+  .copyright-text
+  {
+	margin:0;
+	font-weight: 600;
+  }
+  @media (max-width:991px)
+  {
+	.site-footer [class^=col-]
+	{
+	  margin-bottom:5px;
+	}
+  }
+  @media (max-width:768px)
+  {
+	.copyright-text{
+		margin-right: 150px;
+	}
+	.footer-links li {
+		display:inline;
+		margin: 0 20px 0 0;
+	}
+
+	.site-footer
+	{
+	  padding-bottom:0
+	}
+	.site-footer .copyright-text,.site-footer .social-icons
+	{
+	  text-align:center
+	}
+  }
+  .social-icons
+  {
+	padding-left:0;
+	margin-bottom:0;
+	list-style:none
+  }
+  .social-icons li
+  {
+	display:inline-block;
+	margin-bottom:4px;
+  }
+  .social-icons li.title
+  {
+	margin-right:15px;
+	text-transform:uppercase;
+	color:#96a2b2;
+	font-weight:700;
+	font-size:13px;
+  }
+  .social-icons a{
+	background-color:#eceeef;
+	color:#818a91;
+	font-size:16px;
+	display:inline-block;
+	line-height:44px;
+	width:44px;
+	height:44px;
+	text-align:center;
+	margin-right:8px;
+	border-radius:100%;
+	-webkit-transition:all .2s linear;
+	-o-transition:all .2s linear;
+	transition:all .2s linear
+  }
+  .social-icons a:active,.social-icons a:focus,.social-icons a:hover
+  {
+	color:#fff;
+	background-color:#29aafe
+  }
+  .social-icons.size-sm a
+  {
+	line-height:34px;
+	height:34px;
+	width:34px;
+	font-size:14px
+  }
+  .social-icons a.facebook:hover
+  {
+	background-color:#3b5998
+  }
+  .social-icons a.twitter:hover
+  {
+	background-color:#00aced
+  }
+  .social-icons a.linkedin:hover
+  {
+	background-color:#007bb6
+  }
+  .social-icons a.dribbble:hover
+  {
+	background-color:#ea4c89
+  }
+  @media (max-width:767px)
+  {
+	.social-icons li.title
+	{
+	  display:block;
+	  margin-right:0;
+	  font-weight:600
+	}
+  }
+  @media (max-width: 600px) {
+	.copyright-text {
+		margin: 0;
+	  text-align: center;
+	}
+  }
